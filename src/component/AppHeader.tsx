@@ -4,8 +4,7 @@ import Button, { SelectButton } from './Button';
 import styles from '../styles/modules/app.module.scss';
 import TodoModal from './TodoModal';
 import { updateFilterStatus } from '../slices/todoSlice';
-import { RootState } from '../app/store'; // Import RootState type from your Redux store file
-
+import { RootState } from '../app/store'; 
 function AppHeader() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const initialFilterStatus = useSelector((state: RootState) => state.todo.filterStatus);
